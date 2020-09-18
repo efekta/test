@@ -3,11 +3,15 @@
 		.box.box-first
 			.box-pic(style="background-image: url('images/ava.jpeg');")
 				img(src="images/ava.jpeg" alt="avatar")
-			ul.box-content
-				li.box-content__item Лилия
-				li.box-content__item 22 июня 1989г
-				li.box-content__item Нововоронеж
-				li.box-content__item efekta9@gmail.com
+			form.box-content(action="" method="post")
+				.box-content__item
+					input(type="text" placeholder="Лилия")
+				.box-content__item
+					input(type="text" placeholder="22 июня 1989г")
+				.box-content__item
+					input(type="text" placeholder="Нововоронеж")
+				.box-content__item
+					input(type="text" placeholder="efekta9@gmail.com")
 		.box.box-second
 			.box-second__title Навыки
 			form

@@ -69,12 +69,31 @@
 			padding: 0 0 5px 0;
 			margin-bottom: 35px;
 			border-bottom: 3px solid rgb(51, 51, 51);
-			font-size: 12px;
-			font-weight: 500;
-			color: #666;
-			text-transform: uppercase;
+			transition: all .3s ease-in-out;
 			&:last-child {
 				margin-bottom: 0;
+			}
+			&:hover {
+				border-bottom: 3px solid #0093d7;
+			}
+			input {
+				font-size: 12px;
+				font-weight: 500;
+				color: #666;
+				text-transform: uppercase;
+				border: none;
+				outline: none;
+				background: transparent;
+			}
+			input:hover {
+				border: none;
+				outline: none;
+				background: transparent;
+			}
+			input:focus {
+				border: none;
+				outline: none;
+				background: transparent;
 			}
 		}
 	}
@@ -99,11 +118,18 @@
 			width: 49%;
 		}
 	}
+	input {
+		transition: all .3s ease-in-out;
+	}
 	label {
 		text-transform: uppercase;
 		color: #666;
 		font-size: 12px;
 		font-weight: 500;
+		transition: all .3s ease-in-out;
+		&:hover {
+			color: #0093d7;
+		}
 	}
 }
 .box-third {
